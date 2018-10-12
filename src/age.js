@@ -76,25 +76,55 @@ export class BirthDay {
     let mercuryAge = Math.floor(this.calculateAge() / secondsInYear/(mercuryYear/earthYear));
     console.log(mercuryAge);
     return mercuryAge;
+    //2
+
   }
 
   saturnLifeExpectancy() {
       let saturnLifeExpectancy = Math.floor(lifeExpectancy / (saturnYear / earthYear));
-      let saturnAge = (this.birthday / (saturnYear / earthYear));
-      let amountAboveLifeExpectancy = Math.floor(saturnAge - saturnLifeExpectancy);
-      if (saturnAge > saturnLifeExpectancy) {
-        return amountAboveLifeExpectancy;
-      } else {
-      return saturnLifeExpectancy;
-      }
-
+      let saturnAge = Math.floor(this.realAge() / (saturnYear / earthYear));
+      console.log("bd: " + this.realAge());
+      console.log("sle: " + saturnLifeExpectancy);
+      console.log("sa: " + saturnAge);
+      let surpassedLifeExpectancy = Math.floor(saturnLifeExpectancy - saturnAge);
+      // if (saturnAge > saturnLifeExpectancy) {
+      // return surpassedLifeExpectancy;
+      // } else {
+      //   return saturnLifeExpectancy;
+      // }
+       return surpassedLifeExpectancy;
     }
+
+    // marsLifeExpectancy() {
+    //     let marsLifeExpectancy = Math.floor(lifeExpectancy / (marsYear / earthYear));
+    //     let marsAge = (this.birthday / (marsYear / earthYear));
+    //     let surpassedLifeExpectancy = Math.floor(marsAge - marsLifeExpectancy);
+    //     if (marsAge > marsLifeExpectancy) {
+    //       return surpassedLifeExpectancy;
+    //     } else {
+    //     return marsLifeExpectancy;
+    //     }
+    //
+    //   }2.71
+    //    2.64
+    //
+    //   venusLifeExpectancy() {
+    //       let venusLifeExpectancy = Math.floor(lifeExpectancy / (venusYear / earthYear));
+    //       let venusAge = (this.birthday / (venusYear / earthYear));
+    //       let surpassedLifeExpectancy = Math.floor(venusAge - venusLifeExpectancy);
+    //       if (venusAge > venusLifeExpectancy) {
+    //         return surpassedLifeExpectancy;
+    //       } else {
+    //       return venusLifeExpectancy;
+    //       }
+    //
+    //     }
 
 }
 
 
-let resultNew = new BirthDay('1938-10-10');
-resultNew.saturnLifeExpectancy();
+// let resultNew = new BirthDay('1938-10-10');
+// resultNew.saturnLifeExpectancy();
 // let venusResult = new BirthDay('1966-10-10');
 // venusResult.yourAgeOnVenus();
 // let jupiterResult = new BirthDay('1966-10-10');
