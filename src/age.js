@@ -83,9 +83,9 @@ export class BirthDay {
   saturnLifeExpectancy() {
     let saturnLifeExpectancy = Math.floor(lifeExpectancy / (saturnYear / earthYear));
     let saturnAge = Math.floor(this.realAge() / (saturnYear / earthYear));
-    console.log("bd: " + this.realAge());
-    console.log("sle: " + saturnLifeExpectancy);
-    console.log("sa: " + saturnAge);
+    // console.log("bd: " + this.realAge());
+    // console.log("sle: " + saturnLifeExpectancy);
+    // console.log("sa: " + saturnAge);
     let surpassedLifeExpectancy = Math.floor(saturnAge - saturnLifeExpectancy);
     return surpassedLifeExpectancy;
   }
@@ -93,20 +93,30 @@ export class BirthDay {
   marsLifeExpectancy() {
     let marsLifeExpectancy = Math.floor(lifeExpectancy / (marsYear / earthYear));
     let marsAge = Math.floor(this.realAge() / (marsYear / earthYear));
-    console.log("bd: " + this.realAge());
-    console.log("sle: " + marsLifeExpectancy);
-    console.log("sa: " + marsAge);
+    // console.log("bd: " + this.realAge());
+    // console.log("sle: " + marsLifeExpectancy);
+    // console.log("sa: " + marsAge);
     let surpassedLifeExpectancy = Math.floor(marsAge - marsLifeExpectancy);
     return surpassedLifeExpectancy;
   }
 
-//mars life exp is 40
+  //mars life exp is 40
 
+
+  venusLifeExpectancy() {
+    let venusLifeExpectancy = Math.floor(lifeExpectancy / (venusYear / earthYear));
+    let venusAge = Math.floor(this.realAge() / (venusYear / earthYear));
+    // console.log("bd: " + this.realAge());
+    // console.log("sle: " + venusLifeExpectancy);
+    // console.log("sa: " + venusAge);
+    let surpassedLifeExpectancy = Math.floor(venusAge - venusLifeExpectancy);
+    return surpassedLifeExpectancy;
+  }
 
 }
 
 
-// let resultNew = new BirthDay('1938-10-10');
+// let resultNew = new BirthDay('1966-10-10');
 // resultNew.saturnLifeExpectancy();
 // let venusResult = new BirthDay('1966-10-10');
 // venusResult.yourAgeOnVenus();
