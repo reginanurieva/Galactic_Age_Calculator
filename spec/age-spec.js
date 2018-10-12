@@ -29,6 +29,11 @@ describe ('BirthDay', function(){
     expect(testNeptuneAge.yourAgeOnNeptune()).toEqual(0);
   });
 
+  it('should return users age in uranus years', function(){
+    let testUranusAge = new BirthDay('1966-10-10');
+    expect(testUranusAge.yourAgeOnUranus()).toEqual(0);
+  });
+
   it('should return users age in saturn years', function(){
     let testSaturnAge = new BirthDay('1966-10-10');
     expect(testSaturnAge.yourAgeOnSaturn()).toEqual(1);
@@ -42,5 +47,12 @@ describe ('BirthDay', function(){
   it('should return users age in earth years', function(){
     let testEarthAge = new BirthDay('1966-10-10');
     expect(testEarthAge.realAge()).toEqual(52);
+  });
+
+
+  it('should return users life expectancy on saturn', function(){
+    let testSaturnLifeExpectancy = new BirthDay('1938-10-10');
+    console.log(testSaturnLifeExpectancy.saturnLifeExpectancy());
+    expect(testSaturnLifeExpectancy.saturnLifeExpectancy()).toEqual(2);
   });
 });

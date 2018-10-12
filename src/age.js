@@ -1,6 +1,5 @@
 const secondsInYear = 31536000;
 
-
 const marsYear = 687;
 const venusYear = 225;
 const jupiterYear = 4333;
@@ -9,6 +8,9 @@ const uranusYear = 30689;
 const neptuneYear = 60182;
 const mercuryYear = 88;
 const earthYear = 365;
+
+
+const lifeExpectancy = 80;
 
 
 export class BirthDay {
@@ -76,11 +78,23 @@ export class BirthDay {
     return mercuryAge;
   }
 
+  saturnLifeExpectancy() {
+      let saturnLifeExpectancy = Math.floor(lifeExpectancy / (saturnYear / earthYear));
+      let saturnAge = (this.birthday / (saturnYear / earthYear));
+      let amountAboveLifeExpectancy = Math.floor(saturnAge - saturnLifeExpectancy);
+      if (saturnAge > saturnLifeExpectancy) {
+        return amountAboveLifeExpectancy;
+      } else {
+      return saturnLifeExpectancy;
+      }
+
+    }
 
 }
 
-// let resultNew = new BirthDay('1966-10-10');
-// resultNew.yourAgeOnMars();
+
+let resultNew = new BirthDay('1938-10-10');
+resultNew.saturnLifeExpectancy();
 // let venusResult = new BirthDay('1966-10-10');
 // venusResult.yourAgeOnVenus();
 // let jupiterResult = new BirthDay('1966-10-10');
