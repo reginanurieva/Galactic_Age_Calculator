@@ -100,6 +100,16 @@ export class BirthDay {
     return surpassedLifeExpectancy;
   }
 
+  marsLifeExpectancyIfYoung() {
+    let marsLifeExpectancy = Math.floor(lifeExpectancy / (marsYear / earthYear));
+    let marsAge = Math.floor(this.realAge() / (marsYear / earthYear));
+    // console.log("bd: " + this.realAge());
+    // console.log("sle: " + marsLifeExpectancy);
+    // console.log("sa: " + marsAge);
+    let surpassedLifeExpectancy = Math.floor(marsLifeExpectancy - marsAge);
+    return surpassedLifeExpectancy;
+  }
+
   //mars life exp is 40
 
 

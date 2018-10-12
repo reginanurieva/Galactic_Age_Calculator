@@ -13,13 +13,13 @@ Program in JavaScript that calculates the user's galactic age. Also the program 
   * Output Example: "Please enter your birthday"
   * Input Example: "1966/10/10."
 2. The program calculates the user's age in milliseconds.
-  * Input Example:"1966/10/10"
-  * Output Example: "1641224692".
+  * Example:"1966/10/10"
+          : "1641224692".
 3. The program converts the user's age into the solar system ages.
   * Output Example: "Earth Age: 52 ".
                     "Mercury Age: 215 ".
-4. The program determines approximate life expectancy on the planet.
-  * Output Example: "Your life expectancy on Mercury is 282 years".
+4. The program checks how far you have surpassed the life expectancy on the planet.
+  * Output Example: "You have surpassed the life expectancy for 2 years".
 
 ## Setup/Installation Requirements
 

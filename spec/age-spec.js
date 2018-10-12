@@ -60,6 +60,12 @@ describe ('BirthDay', function(){
     expect(testMarsLifeExpectancy.marsLifeExpectancy()).toEqual(20);
   });
 
+  it('should return how many years the user has left on mars', function(){
+    let testMarsLifeExpectancy = new BirthDay('1995-10-10');
+    expect(testMarsLifeExpectancy.marsLifeExpectancyIfYoung()).toEqual(30);
+  });
+
+
   it('should return how far the user is surpassed the life expectancy on venus', function(){
     let testVenusLifeExpectancy = new BirthDay('1900-10-10');
     expect(testVenusLifeExpectancy.venusLifeExpectancy()).toEqual(62);
