@@ -81,44 +81,27 @@ export class BirthDay {
   }
 
   saturnLifeExpectancy() {
-      let saturnLifeExpectancy = Math.floor(lifeExpectancy / (saturnYear / earthYear));
-      let saturnAge = Math.floor(this.realAge() / (saturnYear / earthYear));
-      console.log("bd: " + this.realAge());
-      console.log("sle: " + saturnLifeExpectancy);
-      console.log("sa: " + saturnAge);
-      let surpassedLifeExpectancy = Math.floor(saturnLifeExpectancy - saturnAge);
-      // if (saturnAge > saturnLifeExpectancy) {
-      // return surpassedLifeExpectancy;
-      // } else {
-      //   return saturnLifeExpectancy;
-      // }
-       return surpassedLifeExpectancy;
-    }
+    let saturnLifeExpectancy = Math.floor(lifeExpectancy / (saturnYear / earthYear));
+    let saturnAge = Math.floor(this.realAge() / (saturnYear / earthYear));
+    console.log("bd: " + this.realAge());
+    console.log("sle: " + saturnLifeExpectancy);
+    console.log("sa: " + saturnAge);
+    let surpassedLifeExpectancy = Math.floor(saturnAge - saturnLifeExpectancy);
+    return surpassedLifeExpectancy;
+  }
 
-    // marsLifeExpectancy() {
-    //     let marsLifeExpectancy = Math.floor(lifeExpectancy / (marsYear / earthYear));
-    //     let marsAge = (this.birthday / (marsYear / earthYear));
-    //     let surpassedLifeExpectancy = Math.floor(marsAge - marsLifeExpectancy);
-    //     if (marsAge > marsLifeExpectancy) {
-    //       return surpassedLifeExpectancy;
-    //     } else {
-    //     return marsLifeExpectancy;
-    //     }
-    //
-    //   }2.71
-    //    2.64
-    //
-    //   venusLifeExpectancy() {
-    //       let venusLifeExpectancy = Math.floor(lifeExpectancy / (venusYear / earthYear));
-    //       let venusAge = (this.birthday / (venusYear / earthYear));
-    //       let surpassedLifeExpectancy = Math.floor(venusAge - venusLifeExpectancy);
-    //       if (venusAge > venusLifeExpectancy) {
-    //         return surpassedLifeExpectancy;
-    //       } else {
-    //       return venusLifeExpectancy;
-    //       }
-    //
-    //     }
+  marsLifeExpectancy() {
+    let marsLifeExpectancy = Math.floor(lifeExpectancy / (marsYear / earthYear));
+    let marsAge = Math.floor(this.realAge() / (marsYear / earthYear));
+    console.log("bd: " + this.realAge());
+    console.log("sle: " + marsLifeExpectancy);
+    console.log("sa: " + marsAge);
+    let surpassedLifeExpectancy = Math.floor(marsAge - marsLifeExpectancy);
+    return surpassedLifeExpectancy;
+  }
+
+//mars life exp is 40
+
 
 }
 

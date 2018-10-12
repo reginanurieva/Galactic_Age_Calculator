@@ -49,24 +49,15 @@ describe ('BirthDay', function(){
     expect(testEarthAge.realAge()).toEqual(52);
   });
 
-//tests for life expectancy
-  // it('should return users life expectancy on saturn', function(){
-  //   let testSaturnLifeExpectancy = new BirthDay('1938-10-10');
-  //   expect(testSaturnLifeExpectancy.saturnLifeExpectancy()).toEqual(2);
-  // });
 
   it('should return how far the user is surpassed the life expectancy on saturn', function(){
     let testSaturnLifeExpectancy = new BirthDay('1900-10-10');
-    expect(testSaturnLifeExpectancy.saturnLifeExpectancy()).toEqual(-2);
+    expect(testSaturnLifeExpectancy.saturnLifeExpectancy()).toEqual(2);
   });
 
-  // it('should return users life expectancy on mars', function(){
-  //   let testMarsLifeExpectancy = new BirthDay('1938-10-10');
-  //   expect(testMarsLifeExpectancy.marsLifeExpectancy()).toEqual(42);
-  // });
-  //
-  // it('should return users life expectancy on venus', function(){
-  //   let testVenusLifeExpectancy = new BirthDay('1938-10-10');
-  //   expect(testMarsLifeExpectancy.venusLifeExpectancy()).toEqual(130);
-  // });
+  it('should return how far the user is surpassed the life expectancy on mars', function(){
+    let testMarsLifeExpectancy = new BirthDay('1900-10-10');
+    expect(testMarsLifeExpectancy.marsLifeExpectancy()).toEqual(20);
+  });
+
 });
