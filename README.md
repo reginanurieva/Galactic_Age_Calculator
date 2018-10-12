@@ -17,7 +17,7 @@ Program in JavaScript that calculates the user's galactic age. Also the program 
   * In seconds:"1641224692".
 3. The program converts the user's age into the solar system ages.
   * Output Example: "Earth Age: 52 ".
-  *                  "Mercury Age: 215 ".
+  * "Mercury Age: 215 ".
 4. The program checks how far you have surpassed the life expectancy on the planet.
   * Output Example: "You have surpassed the life expectancy for 2 years".
 
